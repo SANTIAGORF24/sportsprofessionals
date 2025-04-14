@@ -89,14 +89,15 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <ScaleIn>
-            <iframe
-  src="https://www.youtube.com/embed/bkE8MCktfGI"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  width={600}
-  height={400}
-  className="mx-auto rounded-lg object-cover"
-/>
+              {/* Responsive video wrapper */}
+              <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/bkE8MCktfGI"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
             </ScaleIn>
             <SlideIn direction="right">
               <div className="space-y-4">
@@ -298,15 +299,15 @@ export default function Home() {
               </div>
             </SlideIn>
             <ScaleIn delay={0.3}>
-        
-            <iframe
-              src="https://www.youtube.com/embed/BakoE2sMVjg"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              width={600}
-              height={400}
-              className="mx-auto rounded-lg object-cover"
-            />
+              {/* Responsive video wrapper */}
+              <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/BakoE2sMVjg"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
             </ScaleIn>
           </div>
         </div>
