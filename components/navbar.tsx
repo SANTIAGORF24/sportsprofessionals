@@ -20,7 +20,6 @@ const navLinks = [
     ],
   },
   { name: "Quiénes Somos", href: "/quienes-somos" },
-  { name: "UNOFIT", href: "/unofit" },
   { name: "Formación", href: "/formacion" },
   { name: "Clientes", href: "/clientes" },
   { name: "Escenarios", href: "/escenarios-deportivos" },
